@@ -1,2 +1,2 @@
 Project BierHier RoC-Dev
-testje
+Developers in het project : Stijn , Johan , Shivan , Bink (Douwe).
