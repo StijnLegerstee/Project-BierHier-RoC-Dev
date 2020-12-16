@@ -3,8 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Contactpagina</title>
+    <style>
+
+        html,body {
+            background-color: rgb(120,120,120)
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color:rgb(255,153,203);
+            color: black;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(255,182,203);
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .topnav a.active {
+                background-color:rgb(255,193,203);
+                color: black;
+            }
+
+        }
+
+        .input1 {
+            padding-right: 110px;
+        }
+
+        .input2 {
+            padding-right: 43px;
+        }
+
+        .input3 {
+            padding-right: 14px;
+        }
+
+        .input4 {
+            padding-right: 81px;
+        }
+
+        .input5 {
+            width: 300px;
+            height: 200px;
+        }
+
+    </style>
 </head>
-<body style="background-color: rgb(255,192,203)">
+<body>
+
+<div class="topnav" style="font-family: 'Palatino Linotype',sans-serif">
+    <a href="">Home</a>
+    <a href="">Concerten</a>
+    <a href="">Sport</a>
+    <a href="">Recepten</a>
+    <a class="active" href="contact.html">Contact</a>
+    <a href="overons.html">Over ons</a>
+</div>
+
+<h1 style="padding-left: 30px; font-family: 'Palatino Linotype',sans-serif">Contact</h1>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2434.788760053703!2d5.2773618!3d52.3923796!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c617c1dcedf6af%3A0xb7e60f149191e0f!2sMBO%20College%20Almere%20-%20ROC%20van%20Flevoland!5e0!3m2!1snl!2snl!4v1608119320357!5m2!1snl!2snl" width="700" height="375" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br><br>
+
+<form contact style="margin: 20px">
+
+    <label class="input1" style="font-family: 'Courier New',sans-serif" for="naam">naam:</label>
+    <input type="text" style="font-family: 'Courier New',sans-serif" id="naam" UInaam="naam" placeholder="Uw naam..."><br>
+    <label class="input2" style="font-family: 'Courier New',sans-serif" for="e-mailadres">e-mailadres:</label>
+    <input type="email" style="font-family: 'Courier New',sans-serif" id="e-mailadres" UIe-mailadres="e-mailadres" placeholder="Uw E-mailadres..."><br>
+    <label class="input3" style="font-family: 'Courier New',sans-serif" for="telefoonnummer">telefoonnummer:</label>
+    <input type="tel" style="font-family: 'Courier New',sans-serif" id="telefoonnummer" UITelefoon="telefoonnummer" placeholder="Uw telefoonnummer..."><br><br>
+    <label class="input4" style="font-family: 'Courier New',sans-serif" for="bericht">bericht:</label>
+    <textarea class="input5" style="font-family: 'Courier New',sans-serif" id="bericht" UIBericht="bericht" placeholder="Uw bericht..."></textarea>
+    <input type="submit">
+
+</form>
 
 </body>
 </html>
